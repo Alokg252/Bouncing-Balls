@@ -1,102 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="stylesheet" href="bouncy.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouncing Ball Animation</title>
+
 </head>
-
-<style>
-    .sky{
-        position: absolute;
-        bottom: 10vh;
-        height: 80vh;
-        width: 80vw;
-        background-color: skyblue;
-    }
-
-    .grass{
-        height: 30vh;
-        width: 40vw;
-        background-color: limegreen;
-        border-radius: 100% 100% 0 0;
-    }
-    .g1{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-    .g2{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-    .sun{
-        height: 10vh;
-        width: 10vh;
-        background-color: rgb(241, 191, 26);
-        border-radius: 50%;
-        position: absolute;
-        top: 7vh;
-        left: 9vw;
-        box-shadow: 0px 0px 120px 40px yellow;
-    }
-    .ball{
-        height: 9vh;
-        width: 9vh;
-        border-radius: 50%;
-        position: absolute;
-        bottom: 0;
-        left: 0vh;
-        z-index: 1;
-    }
-
-    .b0{
-        background-color: brown;
-        animation:  bouncey 800ms ease-out infinite alternate,bouncex 2s linear infinite alternate-reverse;
-    }
-    .b1{
-        background-color: blue;
-        animation:  bouncey 900ms ease-out infinite alternate,bbouncex 2.3s linear infinite alternate-reverse;
-    }
-    .b2{
-        background-color:chocolate;
-        animation:  bouncey 800ms ease-out infinite alternate,bouncex 2.3s linear infinite alternate-reverse;
-    }
-    .b3{
-        background-color:darkgrey;
-        animation:  bouncey 1s ease-out infinite alternate,bbouncex 3s linear infinite alternate-reverse;
-    }
-
-    @keyframes bouncex { 
-
-        from{
-        }
-        to{
-            left: 92%;
-        }
-    }
-
-    @keyframes bouncey { 
-
-        from{
-        }
-        to{
-            bottom: 50%;
-        }
-    }
-
-    @keyframes bbouncex { 
-
-        from{
-            left: 92%;
-        }
-        to{
-            left: 0;
-        }
-    }
-
-</style>
 
 <body>
 
